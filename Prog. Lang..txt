@@ -1,0 +1,23 @@
+Prog. Lang.
+
+def get_user_info():
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    birth_year = int(input("Enter your birth year: "))
+    print(f"Your name is {name}, you are {age} years old, and you were born in {birth_year}.")
+
+
+def password_game():
+
+    password = ""
+    while password != "default123":
+        password = input("Enter the password: ")
+        if password == "default123":
+            print("Correct password!")
+        else:
+            print("Incorrect password. Please try again.")
+
+if __name__ == "__main__":
+
+    password_game() 
+    pass
